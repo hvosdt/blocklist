@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+      <div class="container">
+      </div>
+
+      <div class="jumbotron">
+        <h1>Поиск компании</h1>
+
+          <form method="get" action="/search/">
+              <div class="input-group">
+                <span class="input-group-addon"></span>
+                <input type="text" class="form-control" placeholder="Имя компании" name="q">
+              </div><br>
+            <input class="btn btn-lg btn-success" type="submit" value="Найти">
+          </form>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Поиск</h4>
+          <p>Вы можете осуществлять поиск компаний.</p>
+
+          <h4>Добавление</h4>
+          <p>Вы можете добавлять компанию. При этом указать ее рейтинг.</p>
+
+          <h4>Полный список</h4>
+          <p>Вы можете просмотреть полный список компаний, введенный на данный момент.</p>
+        </div>
+
+        </div>
+      </div>
+      </div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    {% if listOfItems %}
+        <ul class="list-group">
+            {% for item in listOfItems %}
+                <li class="list-group-item">{{ item.name }} : {{ item.rank }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p> No items avalible </p>
+    {% endif %}
+{% endblock %}
